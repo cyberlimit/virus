@@ -11,7 +11,11 @@ red='\e[1;31m'
 white='\e[1;37m'
 yellow='\e[1;33m'
 
-figlet -f "DIKONG" 
+
+echo -e "\e[1;31mKETIK NAMA (DIKONG) UNTUK MASUK"
+read nama
+
+figlet  "DIKONG" 
 echo -e "\e[1;32m======================================================"
 echo -e "\e[1;34m     Autor :Cyber Limit"
 echo -e "\e[1;34m Facaebook :wisnu ID "
@@ -26,5 +30,13 @@ echo "Menu Dikong "
 echo ""
 echo "1.>virus mematikan<"
 echo "2.>Hack FB MBF<"
-echo "3.>Hack Fb terbaru<"
+echo ""
 read -p "Pilih Yg Ada Kontol : " pil
+
+if [[ $pil -eq 1 ]]; then
+sleep 1
+python2 Limit.py
+elif [[ $pil -eq 2 ]]; then
+sleep 1
+bash Virusv1.sh
+fi
